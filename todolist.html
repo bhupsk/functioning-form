@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="todolistpage.css">
+</head>
+<body>
+    <div class="container">
+       <h1>TODO LIST</h1> 
+       <div class="inputs">
+        <input type="text" placeholder="Enter your TASk" id="inp">
+        <button onclick="Add()">Add</button>
+       </div>
+    </div>
+    <div class="text">
+
+    </div>
+    <script>
+     let input = document.getElementById("inp");
+     let text = document.querySelector(".text");
+
+     function Add(){
+        if(input.value == ""){
+           alert("please enter task") 
+        }else{
+            let newelm = document.createElement("ul");
+            newelm.innerHTML=`${input.value} <button>delete</button>`;
+            text.appendChild(newelm);
+            input.value ="";
+            newelm.querySelector("button").addEventListener("click",remove);
+            function remove(){
+                newelm.remove()
+            }
+     }
+    }
+    </script>
+</body>
+</html>

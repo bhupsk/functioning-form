@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login form</title>
+     <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Login </h1>
+        <div class="container-text">
+            <p>New to User? <a href="signup.html">Create an account</a> </p>
+        </div>
+        <div class="input-group">
+            <label class="label-input" for="userEmailInp">Email</label>
+            <input class="input-style" id="userEmailInp" type="text" placeholder="example@xyz.com" name="useremail" required>
+            <small id="smallElement" style="color: red;"></small>
+        </div>
+        <div class="input-group">
+            <label class="label-input" for="userpasswordInp">Password</label>
+            <input class="input-style" id="userpasswordInp" type="password" name="userpassword" required>
+            <small id="smallElementpassword" style="color: red;"></small>
+        </div>
+        </div>
+        <div class="common-btn">
+            <button id="loginBtn">Login</button>
+        </div>
+    <script src="loginpage.js"></script>
+</body>
+</html>

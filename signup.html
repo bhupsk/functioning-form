@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signUp Page</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+    <div class="container">
+        <h1>REGISTRATION FORM</h1>
+        <div class="container-text">
+            <p>Already have an account? <a href="index.html"> Log In</a> </p>
+        </div>
+        <div class="input-group">
+            <label class="label-input" for="userEmailInp">Email address</label>
+            <input class="input-style" id="userEmailInp" type="text" placeholder="example@xyz.com" name="useremail" required>
+            <small id="smallElement" style="color: red;"></small>
+        </div>
+        <div id="datacontainer" class="datacontainer">
+            <div class="input-group">
+                <label class="label-input" for="userFnameInp">First name</label>
+                <input class="input-style" id="userFnameInp" type="text"  name="userFname" required>
+                <small id="smallElementFname" style="color: red;"></small>
+            </div>
+            <div class="input-group">
+                <label class="label-input" for="userLnameInp">Last name <small style="color:#B9BECE;"></small> </label>
+                <input class="input-style" id="userLnameInp" type="text"  name="userlname" >
+                <small id="smallElementLname" style="color: red;"></small>
+            </div>
+            <div class="input-group">
+                <label class="label-input" for="userpasswordInp">Password</label>
+                <input class="input-style" id="userpasswordInp" type="password" name="userpassword" placeholder="Password must contain at least 8 characters" required>
+                <small id="smallElementpassword" style="color: red;"></small>
+            </div>
+        </div>
+        <div class="common-btn">
+            <button id="signupbtn">signup</button>
+        </div>
+      
+    <script src="signuppage.js"></script>
+</body>
+</html>
